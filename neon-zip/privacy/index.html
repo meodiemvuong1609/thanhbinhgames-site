@@ -23,7 +23,7 @@
 <body>
 <main>
   <h1>Neon Zip – Privacy Policy</h1>
-  <p class="meta">Effective date: November 24, 2026 (Android version 1.3.0)</p>
+  <p class="meta">Effective date: November 25, 2026 (Android version 1.3.2)</p>
   <p>This Privacy Policy describes how the mobile game <strong>Neon Zip</strong> (the "App"), published by Thanh Binh Games ("we", "us"), handles information. It applies to the App on Apple iOS/iPadOS and Google Android. <strong>From version 1.3.0 the Android App (Google Play and other Android stores) shows ads through Google AdMob, and on Google Play it offers an optional one-time "Premium" purchase</strong>; section 8 describes the data processing this involves. The iOS App contains no ads and no purchases. The web (browser) versions on game portals are described in section 9.</p>
   <p class="summary"><strong>Summary:</strong> <strong>We (Thanh Binh Games) do not collect, store on our servers, share or sell any personal data, and we run no server for the App.</strong> The game itself works completely offline. On Android, the Google Mobile Ads SDK collects certain data and shares it with Google to show ads (section 8), and Google Play handles the optional Premium purchase (section 8).</p>
   <h2>1. Information we collect</h2>
@@ -31,7 +31,7 @@
   <ul>
     <li>does not ask for your name, email address, phone number or any account;</li>
     <li>does not access your contacts, photos, camera, microphone, location or other device data;</li>
-    <li>contains no analytics, crash-reporting or tracking code of our own;</li>
+    <li>uses no analytics SDK except <strong>Google Analytics for Firebase</strong> on Android (anonymous gameplay events, see "Analytics (Android)") and has no crash-reporting or tracking code of our own;</li>
     <li>needs no internet connection to play. On Android, the internet and network-state permissions are used only by the Google Mobile Ads SDK and Google Play Billing (section 8); the iOS App does not connect to the internet.</li>
   </ul>
   <h2>2. Information stored only on your device</h2>
@@ -92,6 +92,14 @@
   </ul>
   <p>If you play the game on another website, that website's privacy policy applies to any data it collects.</p>
   <p><strong>Ads and children.</strong> Interstitial ads are never shown while a level is being played: they may appear before your first game (on portals that require it) or between levels, at most about once every three minutes, and rewarded ads are only shown when you choose to watch one. Age requirements, ad content and children's privacy protections on each portal are set by that portal.</p>
+  <h2>Analytics (Android, version 1.3.2 and later)</h2>
+  <p>The Android App uses <strong>Google Analytics for Firebase</strong> (Firebase SDK by Google) to see, in aggregate, how the game is played (for example which levels are too hard) so we can improve it. It is not used to build advertising profiles, and the App has no crash-reporting SDK (no Crashlytics).</p>
+  <ul>
+    <li><strong>Events:</strong> gameplay events we define (for example a level started, completed or failed with its level number, mode, stars, moves or time; a hint or helper used and whether it was free, from a rewarded video or from Premium; a rewarded video offered or earned; an in-between ad shown; the Premium screen opened, a purchase started or completed) and events Google collects automatically (first open, app update, session start, engagement time). Events never contain your name, email, contacts, account or any text you type.</li>
+    <li><strong>Identifiers and device information:</strong> a random <strong>Firebase app instance ID</strong> created for this installation (a new one is created if you reinstall the App or clear its data), device model, operating system and app version, language, screen size. Google derives an <strong>approximate location</strong> (country, region, city) from the IP address. Analytics does <strong>not</strong> collect the advertising ID (we switched that collection off; the AdMob SDK described above handles its own data).</li>
+    <li><strong>Consent:</strong> Analytics starts with every Google Consent Mode v2 signal set to "denied". When Google's consent form (UMP) has resolved, the App passes your choice on: in the EEA, the UK and Switzerland analytics storage is granted only if you agreed to storing information on your device and to measurement, and the ad-related signals follow your ad choices; elsewhere it is granted. You can change your choice at any time in <strong>Settings → Privacy options</strong>.</li>
+    <li><strong>Who receives it, for how long:</strong> the data is sent encrypted to Google, which processes it for us as a service provider under the Google Analytics terms; we only see aggregated reports in the Firebase console and do not sell it. Event-level data is kept for 2 months (the Google Analytics data-retention setting) and then deleted; aggregated reports without identifiers may be kept longer. More: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a> and <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
+  </ul>
   <h2>10. Contact us</h2>
   <p>If you have any questions about this Privacy Policy, please contact:</p>
   <p><strong>Thanh Binh Games</strong><br>

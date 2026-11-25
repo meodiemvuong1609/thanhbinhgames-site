@@ -22,9 +22,9 @@
 <body>
 <main>
   <h1>Neon Sift – Privacy Policy</h1>
-  <p class="meta">Effective date: November 24, 2026</p>
+  <p class="meta">Effective date: November 25, 2026</p>
   <p>This Privacy Policy describes how the mobile game <strong>Neon Sift</strong> (the "App"), published by Thanh Binh Games ("we", "us"), handles information. It applies to the App on Apple iOS and Google Android. The ads and the Premium purchase described in sections 1–2 are in the Android App only.</p>
-  <p class="summary"><strong>Summary:</strong> <strong>Neon Sift has no accounts and we do not collect, store on our own servers, share or sell personal data.</strong> The game works offline. On Android the App shows ads from Google AdMob (Google processes some device data to show them, see section 1) and offers an optional one-time "Premium" purchase through Google Play that removes the ads (section 2). There are no analytics or tracking SDKs of our own.</p>
+  <p class="summary"><strong>Summary:</strong> <strong>Neon Sift has no accounts and we do not collect, store on our own servers, share or sell personal data.</strong> The game works offline. On Android the App shows ads from Google AdMob (Google processes some device data to show them, see section 1) and offers an optional one-time "Premium" purchase through Google Play that removes the ads (section 2). On Android, Google Analytics for Firebase also counts anonymous gameplay events (see "Analytics (Android)"); there is no other analytics or tracking SDK.</p>
   <h2>1. Advertising (Android, version 1.3.0 and later)</h2>
   <p>The Android App shows ads from <strong>Google AdMob</strong> (Google Mobile Ads SDK) and asks for consent with <strong>Google's User Messaging Platform (UMP)</strong>. There are no banners and no ads when the App opens or during a level:</p>
   <ul>
@@ -40,7 +40,7 @@
   <ul>
     <li>does not ask for your name, email address, phone number or any account;</li>
     <li>does not access your contacts, photos, camera, microphone, precise location or other personal files;</li>
-    <li>has no analytics, crash-reporting or tracking SDKs of our own (the only third-party SDKs are Google's ads, consent and Play Billing libraries on Android);</li>
+    <li>uses no analytics SDK except <strong>Google Analytics for Firebase</strong> on Android (anonymous gameplay events, see "Analytics (Android)") and has no crash-reporting or tracking code of our own;</li>
     <li>uses the internet only for those Google services (on Android it requests the network permissions for them); the game itself plays offline.</li>
   </ul>
   <h2>4. Information stored only on your device</h2>
@@ -70,13 +70,21 @@
   <p>Depending on where you live (for example under the GDPR, UK GDPR, CCPA/CPRA or Vietnam's personal data protection law), you may have rights to access, correct or delete personal data and to withdraw consent. You can change your ad consent at any time in Settings → Privacy options and reset your advertising ID in Android settings. For data processed by Google, see Google's Privacy Policy. We hold no personal data about you on servers of ours; the locally stored game progress is fully under your control as described in section 4.</p>
   <h2>10. Changes to this policy</h2>
   <p>If a future version of the App changes how information is handled, we will update this policy and the "Effective date" above before that version is released.</p>
+  <h2>Analytics (Android, version 1.3.2 and later)</h2>
+  <p>The Android App uses <strong>Google Analytics for Firebase</strong> (Firebase SDK by Google) to see, in aggregate, how the game is played (for example which levels are too hard) so we can improve it. It is not used to build advertising profiles, and the App has no crash-reporting SDK (no Crashlytics).</p>
+  <ul>
+    <li><strong>Events:</strong> gameplay events we define (for example a level started, completed or failed with its level number, mode, stars, moves or time; a hint or helper used and whether it was free, from a rewarded video or from Premium; a rewarded video offered or earned; an in-between ad shown; the Premium screen opened, a purchase started or completed) and events Google collects automatically (first open, app update, session start, engagement time). Events never contain your name, email, contacts, account or any text you type.</li>
+    <li><strong>Identifiers and device information:</strong> a random <strong>Firebase app instance ID</strong> created for this installation (a new one is created if you reinstall the App or clear its data), device model, operating system and app version, language, screen size. Google derives an <strong>approximate location</strong> (country, region, city) from the IP address. Analytics does <strong>not</strong> collect the advertising ID (we switched that collection off; the AdMob SDK described above handles its own data).</li>
+    <li><strong>Consent:</strong> Analytics starts with every Google Consent Mode v2 signal set to "denied". When Google's consent form (UMP) has resolved, the App passes your choice on: in the EEA, the UK and Switzerland analytics storage is granted only if you agreed to storing information on your device and to measurement, and the ad-related signals follow your ad choices; elsewhere it is granted. You can change your choice at any time in <strong>Settings → Privacy options</strong>.</li>
+    <li><strong>Who receives it, for how long:</strong> the data is sent encrypted to Google, which processes it for us as a service provider under the Google Analytics terms; we only see aggregated reports in the Firebase console and do not sell it. Event-level data is kept for 2 months (the Google Analytics data-retention setting) and then deleted; aggregated reports without identifiers may be kept longer. More: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a> and <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
+  </ul>
   <h2>11. Contact us</h2>
   <p>If you have any questions about this Privacy Policy, please contact:</p>
   <p><strong>Thanh Binh Games</strong></p>
   <p>Email: <a href="mailto:thanhbinh16092k1@gmail.com">thanhbinh16092k1@gmail.com</a></p>
   <p>Website: <a href="https://thanhbinhgames.github.io/">https://thanhbinhgames.github.io/</a></p>
   <h2 lang="vi">Tóm tắt tiếng Việt</h2>
-  <p>Neon Sift không có tài khoản; chúng tôi không thu thập, không lưu trên máy chủ của mình, không chia sẻ và không bán dữ liệu cá nhân. Game chạy offline. Từ bản Android 1.3.0, app hiện quảng cáo của Google AdMob (ở điểm nghỉ sau khi bấm TIẾP ở màn đã thắng và video có thưởng do bạn tự chọn; không có ở các màn đầu và Daily) — Google có thể thu mã quảng cáo/mã thiết bị, địa chỉ IP (vị trí gần đúng), tương tác với quảng cáo và chẩn đoán SDK để hiển thị, đo lường quảng cáo và chống gian lận; đổi lựa chọn ở Cài đặt → Quyền riêng tư. Gói Premium mua một lần qua Google Play bỏ quảng cáo; Google xử lý thanh toán, app chỉ nhận trạng thái đã mua. Tiến trình (màn đã mở, sao, trợ giúp, điểm cao Vô tận, chuỗi Daily Sift, băng giữ chuỗi, theme, cài đặt, tuỳ chọn nhắc Daily, số màn thắng để giãn quảng cáo, cờ Premium) chỉ lưu trên thiết bị của bạn. Liên hệ: thanhbinh16092k1@gmail.com.</p>
+  <p>Neon Sift không có tài khoản; chúng tôi không thu thập, không lưu trên máy chủ của mình, không chia sẻ và không bán dữ liệu cá nhân. Game chạy offline. Từ bản Android 1.3.0, app hiện quảng cáo của Google AdMob (ở điểm nghỉ sau khi bấm TIẾP ở màn đã thắng và video có thưởng do bạn tự chọn; không có ở các màn đầu và Daily) — Google có thể thu mã quảng cáo/mã thiết bị, địa chỉ IP (vị trí gần đúng), tương tác với quảng cáo và chẩn đoán SDK để hiển thị, đo lường quảng cáo và chống gian lận; đổi lựa chọn ở Cài đặt → Quyền riêng tư. Gói Premium mua một lần qua Google Play bỏ quảng cáo; Google xử lý thanh toán, app chỉ nhận trạng thái đã mua. Tiến trình (màn đã mở, sao, trợ giúp, điểm cao Vô tận, chuỗi Daily Sift, băng giữ chuỗi, theme, cài đặt, tuỳ chọn nhắc Daily, số màn thắng để giãn quảng cáo, cờ Premium) chỉ lưu trên thiết bị của bạn. Liên hệ: thanhbinh16092k1@gmail.com. Từ bản Android 1.3.2, app dùng Google Analytics for Firebase để đếm sự kiện chơi ẩn danh (bắt đầu/xong/thua, gợi ý, quảng cáo, mở Premium) kèm mã cài đặt ngẫu nhiên của Firebase, thông tin thiết bị và vị trí gần đúng theo IP; không thu mã quảng cáo, không có Crashlytics; tuân lựa chọn quyền riêng tư (UMP), đổi ở Cài đặt → Quyền riêng tư; dữ liệu sự kiện giữ 2 tháng.</p>
   <footer>© 2026 Thanh Binh Games · <a href="https://thanhbinhgames.github.io/">thanhbinhgames.github.io</a></footer>
 </main>
 </body>
